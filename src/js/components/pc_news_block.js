@@ -23,10 +23,9 @@ export default class PCNewsBlock extends React.Component {
     const newsList = news.length
       ? news.map((newsItem, index) => (
         <li key={index}>
-        {newsItem.title}
-          {/* <Link to={`details/${newsItem.uniquekey}`} target="_blank">
+          <Link to={`#details/${newsItem.uniquekey}`} target="_blank">
             {newsItem.title}
-          </Link> */}
+          </Link>
         </li>
       ))
       : '没有加载到任何新闻';
